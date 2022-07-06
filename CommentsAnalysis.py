@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
 
-from AnalizaZdan.sent_analysis import SentimentAnalyzer
-from AnalizaZdan.youtube_comments import YouTubeComments
+from sent_analysis import SentimentAnalyzer
+from youtube_comments import YouTubeComments
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
