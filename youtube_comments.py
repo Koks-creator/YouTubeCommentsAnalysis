@@ -14,7 +14,7 @@ os.environ['WDM_LOG_LEVEL'] = '0'
 class YouTubeComments:
     _api_service_name: str = field(default="youtube", init=False)
     _api_version: str = field(default="v3", init=False)
-    developer_key: str = "AIzaSyBi7zzOcY7DDJgVQTvWhvBSRD0TzzyuVqo"
+    developer_key: str = "<api key>"
 
     youtube = build(_api_service_name.default, _api_version.default, developerKey=developer_key)
 
