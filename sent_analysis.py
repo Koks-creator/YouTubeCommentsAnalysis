@@ -26,13 +26,13 @@ class SentimentAnalyzer:
     emotions_classes = set(emotion_classes_list)
 
     @staticmethod
-    def clean_text(text: str):
+    def clean_text(text: str) -> str:
         lower_case = text.lower()
         cleaned_text = lower_case.translate(str.maketrans('', '', string.punctuation))
 
         return cleaned_text
 
-    def analyze_sent(self, text: str):
+    def analyze_sent(self, text: str) -> tuple:
         cleaned_text = self.clean_text(text)
         data = self.sent_analyzer.polarity_scores(cleaned_text)
 
@@ -47,7 +47,7 @@ class SentimentAnalyzer:
 
         return sent_class, score
 
-    def get_emotion_info(self, text: str, lang="english"):
+    def get_emotion_info(self, text: str, lang="english") -> dict:
         cleaned_text = self.clean_text(text)
 
         tokenized_words = word_tokenize(cleaned_text, lang)
