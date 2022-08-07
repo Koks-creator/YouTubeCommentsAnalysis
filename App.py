@@ -1,10 +1,10 @@
-import dash
+import dash # 1.12.0
 import plotly.graph_objects as go
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Output, Input, State
-import dash_table
-import dash_bootstrap_components as dbc
+import dash_table # 4.7.0
+import dash_bootstrap_components as dbc # 0.10.7
 from dash.exceptions import PreventUpdate
 import pandas as pd
 
