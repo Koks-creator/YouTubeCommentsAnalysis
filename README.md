@@ -1,6 +1,6 @@
 # YouTubeCommentsAnalysis
 
-<h3>Info</h3>
-<p>Basic graph</p>
+<h3>Basic graphs</h3>
+
 
 ![plot](https://user-images.githubusercontent.com/73878161/177638271-f9436780-25fe-4e72-9206-7aed00ba26a3.jpg)
