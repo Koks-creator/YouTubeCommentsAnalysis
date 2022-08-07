@@ -8,8 +8,8 @@ import dash_bootstrap_components as dbc
 from dash.exceptions import PreventUpdate
 import pandas as pd
 
-from JutubCommentAnalysys.sent_analysis import SentimentAnalyzer
-from JutubCommentAnalysys.youtube_comments import YouTubeComments
+from sent_analysis import SentimentAnalyzer
+from youtube_comments import YouTubeComments
 
 sentiment_analyzer = SentimentAnalyzer()
 yt_comms = YouTubeComments()
